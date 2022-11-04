@@ -235,7 +235,10 @@ app.layout = html.Div(style={'backgroundColor':colors['background']},children=[
     
     
     
-app.run_server( debug = True)
+#app.run_server( debug = True)
+
+if __name__ == '__main__':
+    app.run_server(debug=True)
 
 
 

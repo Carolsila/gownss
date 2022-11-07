@@ -47,9 +47,9 @@ m
 
 
 fig= px.bar(m, x='Masks', y='CO2e',color='Masks',
-           color_discrete_map={'SU- Air flight-China':'#722F37','SU-Sea freight-China':'#DE3163','SU-Road-Turkey':'#A42A04','RevZ':'#2A537A'},
+           color_discrete_map={'SU- Air flight-China':'#722F37','SU-Sea freight-China':'#DE3163','SU-Road-Turkey':'#A42A04','RZ(reusable)':'#2A537A'})
             
-            title='CO2e(equivalents) of Masks')
+            #title='CO2e(equivalents) of Masks')
 fig.show()
 
 
@@ -79,7 +79,7 @@ def drawFigure1():
                     figure=px.bar(df, x='Gowns(1000  units)', y='CO2e(KGs)',color='Gowns(1000  units)',
                                   
                                   
-                           color_discrete_map={'Disposable':'#770737','Reusable':'#FFBF00','RevZ':'#2A537A','RevZ Forecasts':'#367D77'}, 
+                           color_discrete_map={'Disposable':'#770737','Reusable':'#FFBF00','RZ (reusable)':'#2A537A','RZ Forecasts':'#367D77'},
                            labels={'Gowns(1000  units)':'Gowns(1000 units)'})
             
                            #title='Disposable/Reusable/Revolution-ZERO Gowns.')
@@ -112,10 +112,10 @@ def drawFigure2():
                                   
                                   labels={'CO2e':'CO2e(KGs)','Masks':'Masks(1000 units)'},
                                   
-                                  color_discrete_map={'SU- Air freight-China':'#770737',
-                                                              'SU-Sea Flight-China':'#FFBF00',
-                                                              'SU-Road-Turkey':'#2A537A', 
-                                                               'RevZ':'#367D77'
+                                  color_discrete_map={'SU- Air flight-China':'#770737',
+                                                              'SU-Sea freight-China':'#FFBF00',
+                                                              'SU-Road-Turkey':'#2A537A',
+                                                               'RZ(reusable)':'#367D77'
  
                                                               }
                                   

@@ -80,7 +80,7 @@ def drawFigure1():
                                   
                                   
                            color_discrete_map={'Disposable':'#770737','Reusable':'#FFBF00','RevZ':'#2A537A','RevZ Forecasts':'#367D77'}, 
-                           labels={'CO2e(KGs)':'CO2e'},
+                           #labels={'CO2e(KGs)':'CO2e'},
             
                            title='Disposable/Reusable/Revolution-ZERO Gowns.')                
                     
@@ -110,7 +110,7 @@ def drawFigure2():
                 dcc.Graph(
                    figure= px.bar(m, x='Masks',y='CO2e',color='Masks',
                                   
-                                  labels={'36 Single-Use Masks (sea freight from China':'SU(Sea freight from China'}, 
+                                  labels={'CO2e':'CO2e(KGs)'},
                                   
                                   color_discrete_map={'SU- Air freight-China':'#770737',
                                                               'SU-Sea Flight-China':'#FFBF00',

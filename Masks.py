@@ -80,9 +80,9 @@ def drawFigure1():
                                   
                                   
                            color_discrete_map={'Disposable':'#770737','Reusable':'#FFBF00','RevZ':'#2A537A','RevZ Forecasts':'#367D77'}, 
-                           #labels={'CO2e(KGs)':'CO2e'},
+                           labels={'Gowns(1000  units)':'Gowns(1000 units)'})
             
-                           title='Disposable/Reusable/Revolution-ZERO Gowns.')                
+                           #title='Disposable/Reusable/Revolution-ZERO Gowns.')
                     
 
                     .update_layout(
@@ -110,16 +110,16 @@ def drawFigure2():
                 dcc.Graph(
                    figure= px.bar(m, x='Masks',y='CO2e',color='Masks',
                                   
-                                  labels={'CO2e':'CO2e(KGs)'},
+                                  labels={'CO2e':'CO2e(KGs)','Masks':'Masks(1000 units)'},
                                   
                                   color_discrete_map={'SU- Air freight-China':'#770737',
                                                               'SU-Sea Flight-China':'#FFBF00',
                                                               'SU-Road-Turkey':'#2A537A', 
                                                                'RevZ':'#367D77'
  
-                                                              },
+                                                              }
                                   
-                                 title=' 36 Single Use(SU) vs 1 Revolution-ZERO(RZ) Masks '
+                                 #title=' Single Use vs Revolution-ZERO '
              )
                     
                     .update_layout( 
@@ -153,7 +153,7 @@ def drawText1():
         dbc.Card(
             dbc.CardBody([
                 html.Div([
-                    html.H2("Environmental Impact(CO2e) of Gowns"),
+                    html.H2("Environmental Impact(CO2e) of 1000 Gowns"),
                 ], style={'font_family':'Helvetica','textAlign': 'center'}) 
             ])
         ),
@@ -166,7 +166,7 @@ def drawText2():
         dbc.Card(
             dbc.CardBody([
                 html.Div([
-                    html.H2("Environmental Impact(CO2e) of Masks"),
+                    html.H2("Environmental Impact(CO2e) of 1000 Masks"),
                 ], style={'textAlign': 'center','font':12}) 
             ])
         ),
@@ -186,7 +186,7 @@ colors={'background':'#000000','text':'#000000'}
 app.layout = html.Div(style={'backgroundColor':colors['background']},children=[
     
     html.Div([ 
-        html.H1(" Gowns / Masks Environmental Impact")
+        html.H1("Environmental Impact of Medical Devices.")
         
     ],style={'textAlign':'center','color':'#FFFFFF'}),
     

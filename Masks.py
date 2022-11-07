@@ -10,7 +10,7 @@ import pandas as  pd
 # In[134]:
 
 
-df= pd.read_csv('C:/Users/CAROL/Desktop/Revolution Zero/gowns.csv')
+df= pd.read_csv('https://raw.githubusercontent.com/Carolsila/gownss/main/gowns.csv')
 df
 
 
@@ -33,7 +33,7 @@ fig.show()
 # In[137]:
 
 
-m=pd.read_csv('C:/Users/CAROL/Desktop/Revolution Zero/Mask.csv')
+m=pd.read_csv('https://raw.githubusercontent.com/Carolsila/gownss/main/Mask.csv')
 m
 
 
@@ -47,7 +47,7 @@ m
 
 
 fig= px.bar(m, x='Masks', y='CO2e',color='Masks',
-           color_discrete_map={'SU- Air freight-China':'#722F37','SU-Sea Flight-China':'#DE3163','SU-Road-Turkey':'#A42A04','RevZ':'#2A537A'}, 
+           color_discrete_map={'SU- Air flight-China':'#722F37','SU-Sea freight-China':'#DE3163','SU-Road-Turkey':'#A42A04','RevZ':'#2A537A'},
             
             title='CO2e(equivalents) of Masks')
 fig.show()

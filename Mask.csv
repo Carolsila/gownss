@@ -1,12 +1,5 @@
-Masks,C02e,,,,,,,,,,,,,
-SU- Air flight-China,438,,,,,,,,,,,,,
-SU-Sea freight-China,596.00,,,,,,,,,,,,,
-SU-Road-Turkey,205.00,,,,,,,,,,,,,
-RZ(reusable),59.10,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,1105220000
+Masks,CO2e
+SU- Air flight-China,438
+SU-Sea freight-China,596
+SU-Road-Turkey,205
+RZ(reusable),59.1

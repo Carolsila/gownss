@@ -112,10 +112,10 @@ def drawFigure2():
                                   
                                   labels={'CO2e':'CO2e (KGs)','Masks':'Masks (1000 units)'},
                                   
-                                  color_discrete_map={'Single-use (China,Air)':'#770737',
-                                                              'Single-use (China,Sea)':'#FFBF00',
-                                                              'Single-use  (Turkey,Road)':'#2A537A',
-                                                               'Revolution-ZERO (Road,Portugal)':'#367D77'
+                                  color_discrete_map={'Single-use (China, Air)':'#770737',
+                                                              'Single-use (China, Sea)':'#FFBF00',
+                                                              'Single-use (Turkey, Road)':'#2A537A',
+                                                               'Revolution-ZERO (Road, Portugal)':'#367D77'
  
                                                               }
                                   
@@ -154,7 +154,7 @@ def drawText1():
             dbc.CardBody([
                 html.Div([
                     html.H2("Environmental Impact (CO2e) of 1000 Sterile Gowns"),
-                ], style={'font_family':'Helvetica','textAlign': 'center'}) 
+                ], style={'font_family':'Helvetica','textAlign': 'left','font':12})
             ])
         ),
     ])
@@ -167,7 +167,7 @@ def drawText2():
             dbc.CardBody([
                 html.Div([
                     html.H2("Environmental Impact (CO2e) of 1000 Masks"),
-                ], style={'textAlign': 'center','font':12}) 
+                ], style={'font_family':'Helvetica','textAlign': 'left','font':12})
             ])
         ),
     ])
@@ -188,7 +188,7 @@ app.layout = html.Div(style={'backgroundColor':colors['background']},children=[
     html.Div([ 
         html.H1("Environmental Impact of Medical Devices")
         
-    ],style={'textAlign':'center','color':'#FFFFFF'}),
+    ],style={'font_family':'Helvetica','textAlign':'center','color':'#FFFFFF'}),
     
 
  dbc.Card(         
